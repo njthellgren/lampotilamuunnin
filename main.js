@@ -33,11 +33,11 @@ document.querySelector('#temperatureInput').addEventListener('submit', function(
     }
 
     if (conversionType === 'Celsius' && result < -273.15){
-        resultMessageElement.textContent = `${result} °C Lämpötila on pienempi kuin absoluuttinen nollapiste.`;
+        resultMessageElement.textContent = `${result} °C. Lämpötila on pienempi kuin absoluuttinen nollapiste.`;
         return;
     }
     else if (conversionType === 'Fahrenheit' && result < -459.67){
-        resultMessageElement.textContent = `${result} °F Lämpötila on pienempi kuin absoluuttinen nollapiste.`;
+        resultMessageElement.textContent = `${result} °F. Lämpötila on pienempi kuin absoluuttinen nollapiste.`;
         return;
     }
 
